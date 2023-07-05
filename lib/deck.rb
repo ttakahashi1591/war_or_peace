@@ -6,11 +6,8 @@ class Deck
     end
 
     def rank_of_card_at(index)
-        if index < 0 || index > 2
+        # if index = 0 || index = 2
 
         @cards[index].rank
     end
-
-    def 
-
 end
