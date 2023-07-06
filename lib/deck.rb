@@ -6,8 +6,10 @@ class Deck
     end
 
     def rank_of_card_at(index)
-        # if index = 0 || index = 2
+       @cards[index].rank
+    end
 
-        @cards[index].rank
+    def high_ranking_cards
+        @cards.select { |card| card.rank >=11}
     end
 end
